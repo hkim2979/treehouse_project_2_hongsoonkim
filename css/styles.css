@@ -1,0 +1,288 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	background-color: #f6e7d4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(17, 17, 17);
+    hyphens: auto;
+    margin: 0;
+}
+
+#portfolio {
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: rgb(0, 84, 133);
+    text-transform: uppercase;
+}
+
+a {
+    color: rgb(0, 84, 133);
+    text-decoration: none;
+    font: 700 100%/1.5 'Roboto', sans-serif
+}
+
+a:hover {
+    color:rgb(0, 32, 51);
+    text-decoration: underline;
+}
+
+p {
+    font: 400 100%/1.5 'Roboto', sans-serif;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+nav ul, footer ul{
+    margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+	margin: 5px 0 5px 0;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+    text-transform: uppercase;
+}
+
+header, .profile, .main-section, .main-skill, .main-contact, footer {
+    margin: auto;
+	padding: 3em 1em 3em 1em;
+	max-width: 1024px;
+	text-align: center;
+}
+
+.skill {
+    padding: 3em 1em;
+}
+
+.name h1 {
+    font-size: 2em;
+    padding: 0 16px 32px 16px;
+}
+
+.profile {
+    padding-top: 0;
+}
+
+.profile p {
+    padding-top: 1em;
+}
+
+.profile img {
+    width: 80%;
+    border: 5px solid white;
+}
+
+.main-section {
+    background-color: rgb(255, 255, 255);
+}
+
+.main-skill {
+    padding: 1em;
+    background: url(../images/winter.jpg) bottom / cover #ffefce;
+    background-blend-mode: multiply;
+}
+
+.img-content {
+	padding: 0 0.5em 0 0.5em;
+}
+
+.img-content img {
+    margin: 3em 0 2em 0;
+}
+
+.main-contact {
+    margin: 0 1em 0 1em;
+	padding: 3em 1em 3em 1em;
+}
+
+.skill {
+    margin: 1em;
+	padding-bottom: 2em;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+}
+
+.skill p {
+    margin: 0 1em 2em 1em;
+}
+
+.skill h2, .main-contact h2 {
+    padding-bottom: 1em;
+}
+
+.skill ul {
+    margin: 0 20px 0;
+	text-align: left;
+}
+
+.skill ul li {
+    margin-left: -20px;
+	font-size: .95em;
+}
+
+.main-contact {
+    border-bottom: 1px solid rgb(0, 84, 133);
+    width: 90%;
+}
+
+
+
+
+
+
+footer {
+	padding: 3em 1em 3em 1em;
+}
+
+.main-footer {
+    float: right;
+    text-transform: uppercase;
+}
+
+footer ul {
+	text-align: right;
+}
+
+footer ul li {
+	display: none;
+	list-style: none;
+	padding: 6px;
+}
+
+footer ul li:last-child {
+	display: inline;
+}
+
+footer h3 {
+	float: left;
+}
+
+
+@media (min-width: 768px) {
+    header, .profile, .main-section, .skill, .main-contact, footer {
+        padding: 3em;
+    }
+    header {
+        height: 3em;
+    }
+    header .name {
+        float: left;
+    }
+    header .name h1 {
+        padding: 0;
+    }
+    nav ul {
+        margin-top: 10px;
+		float: right;
+		text-align: right;
+    }
+    nav ul li {
+        display: inline;
+		background-color: transparent;
+    }
+    .profile img {
+        width: 100%;
+    }
+    .profile p {
+        padding: 0;
+    }
+    .adjust {
+        min-height: 200px;
+    }
+    .adjust-paragraph {
+        width: calc(60% - 4px);
+		padding-right: 3em;
+		font-size: 1.2em;
+		text-align: left;
+		float: left;
+    }
+    .adjust-img {
+        width: 40%;
+		float: right;
+    }
+    .skill-list {
+        display: inline-block;
+		width: 45%;
+    }
+    .main-contact {
+        margin: 1em auto 1em auto;
+    }
+    .main-contact p {
+        padding: 0 5em 1em 5em;
+    }
+    footer ul li {
+		display: inline;
+	}
+    footer ul li:last-child {
+		display: none;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	header {
+		padding-bottom: 6em;
+	}
+    header .name {
+        float: none;
+    }
+    header .name h1 {
+        padding-bottom: 16px;
+    }
+    nav ul {
+		margin-top: 12px;
+		float: none;
+		text-align: center;
+	}
+	nav ul li {
+		display: inline;
+		background-color: transparent;
+	}
+    .img-content {
+        height: 100%;
+		display: inline-block;
+		width: 48%;
+		margin-right: 4px;
+    }
+    .img-content:nth-child(odd) {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	.img-content {
+		display: inline-block;
+		width: calc(32% - 4px);
+		margin-right: 16px;
+	}
+    .profile img {
+        width: 85%;
+        float: right;
+    }
+    .main-contact p {
+        padding: 0 11em 0 11em;
+        margin-top: 0;
+    }
+    .img-content:nth-child(3n+1) {
+		margin-right: -4px;
+	}
+}

@@ -1,6 +1,9 @@
 # Mobile-first Responsive Layout - Hongsoon Kim
 <p>Using HTML, CSS, and responsive design, I created a mobile-first web page with a layout that adjusts to fit mobile phones, tablets, and desktop displays from scratch.</p>
 
+## Live Demo
+Click [Link](https://hkim2979.github.io/project_2) for a live look.
+
 <p align="center">
   <img src="https://github.com/hkim2979/treehouse_project_2_hongsoonkim/blob/main/image_1.png">
 </p>
